@@ -28,6 +28,10 @@ export default class HomeScreen extends React.Component {
   _goToKnap3 = () => {
     Alert.alert('Knap 3')
   }
+ 
+  _goToCredit = () => {
+    Alert.alert("credit to Magnus L and Marcus B")
+  }
 
   render() {
     return (
@@ -39,6 +43,7 @@ export default class HomeScreen extends React.Component {
             title="Knap 1"/>
           <Button onPress={this._goToKnap2} title="Knap 2"/>
           <Button onPress={this._goToKnap3} title="Knap 3"/>
+          <Button onPress={this._goToCredit} title="credit"/>
         </View>     
       </View>
     );
