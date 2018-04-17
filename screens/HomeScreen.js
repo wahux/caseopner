@@ -9,8 +9,10 @@ import {
   TouchableOpacity,
   View,
   Button,
-  Alert
+  Alert,
+  navigationOptions,
 } from 'react-native';
+
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -19,6 +21,7 @@ export default class HomeScreen extends React.Component {
 
   _goToOpen = () => {
     Alert.alert('Kommer snart')
+    navigate('openScreen', {name: 'open'})    
   }
 
   _goToInventory = () => {
@@ -33,6 +36,7 @@ export default class HomeScreen extends React.Component {
     Alert.alert("Credits:")
     Alert.alert("Magnus Ley: Programmør og Ideer")
     Alert.alert("Marcus Berry: Designer og Ideer")
+    
   }
 
   render() {
@@ -45,7 +49,7 @@ export default class HomeScreen extends React.Component {
             title="open"/>
           <Button onPress={this._goToInventory} title="inventory "/>
           <Button onPress={this._goToSettings} title="Settings"/>
-          <Button onPress={this._goToCredit} title="credit"/>
+          <Button onPress={this._goToCredit}  title="credit"/>
         </View>     
       </View>
     );
