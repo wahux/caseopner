@@ -17,20 +17,22 @@ export default class HomeScreen extends React.Component {
     header: null,
   };
 
-  _goToKnap1 = () => {
-    Alert.alert('Knap 1')
+  _goToOpen = () => {
+    Alert.alert('Kommer snart')
   }
 
-  _goToKnap2 = () => {
-    Alert.alert('Knap 2')
+  _goToInventory = () => {
+    Alert.alert('Kommer snart')
   }
 
-  _goToKnap3 = () => {
-    Alert.alert('Knap 3')
+  _goToSettings = () => {
+    Alert.alert('Kommer snart')
   }
  
   _goToCredit = () => {
-    Alert.alert("credit to Magnus L and Marcus B")
+    Alert.alert("Credits:")
+    Alert.alert("Magnus Ley: Programmør og Ideer")
+    Alert.alert("Marcus Berry: Designer og Ideer")
   }
 
   render() {
@@ -39,10 +41,10 @@ export default class HomeScreen extends React.Component {
         <View style={styles.contentContainer}>
           <Text style={styles.text}>Case Opener</Text>
           <Button 
-            onPress={this._goToKnap1} 
-            title="Knap 1"/>
-          <Button onPress={this._goToKnap2} title="Knap 2"/>
-          <Button onPress={this._goToKnap3} title="Knap 3"/>
+            onPress={this._goToOpen} 
+            title="open"/>
+          <Button onPress={this._goToInventory} title="inventory "/>
+          <Button onPress={this._goToSettings} title="Settings"/>
           <Button onPress={this._goToCredit} title="credit"/>
         </View>     
       </View>
