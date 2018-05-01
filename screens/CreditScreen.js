@@ -27,7 +27,13 @@ export default class CreditScreen extends React.Component {
       <View style={styles.container}>
         <View style={styles.contentContainer}>
           <Text style={styles.text}>
-            Credit
+            Credits
+          </Text>
+          <Text style={styles.text1}>
+          Magnus Ley:
+          </Text>
+          <Text style={styles.text1}>
+          Marcus Berry:
           </Text>
         </View>
         <View style={styles.knapContainer}> 
@@ -51,13 +57,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   text: {
-    fontSize: 20,
+    fontSize: 25,
     textAlign: 'center'   
   },
 
   knapContainer: {
     flex: 3,
     justifyContent: 'flex-end'
-  }
-
+  },
+  
+  text1: {
+    fontSize: 20,
+    textAlign: 'center'   
+  },
 });
