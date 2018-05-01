@@ -15,7 +15,7 @@ import {
 export default class OpenScreen extends React.Component {
   static navigationOptions = {
     header: null,
-    title: 'Open Screen',
+    title: 'Inventory',
   };
 
   _goBack = () => {
@@ -26,7 +26,7 @@ export default class OpenScreen extends React.Component {
     return (
       <View style={styles.container}>
       <Text>
-        hej med dig 
+      Inventory
       </Text> 
       <Button onPress={this._goBack} title="Go back"/>
       </View>

@@ -5,11 +5,28 @@ import { StackNavigator } from 'react-navigation';
 import MainTabNavigator from './MainTabNavigator';
 import registerForPushNotificationsAsync from '../api/registerForPushNotificationsAsync';
 
+import OpenScreen from '../screens/OpenScreen'
+import SettingsScreen from '../screens/SettingsScreen';
+import InventoryScreen from '../screens/InventoryScreen'
+import CreditScreen from '../screens/CreditScreen'
+
 const RootStackNavigator = StackNavigator(
   {
     Main: {
       screen: MainTabNavigator,
     },
+    Open: {
+      screen: OpenScreen
+    },
+    Settings: {
+      screen: SettingsScreen
+    },
+    Inventory: {
+      screen: InventoryScreen
+    },
+    Credit: {
+    screen: CreditScreen
+    }
   },
   {
     navigationOptions: () => ({

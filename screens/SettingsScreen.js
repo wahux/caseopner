@@ -1,14 +1,56 @@
-import React from 'react';
-import { ExpoConfigView } from '@expo/samples';
+import React, { Component } from 'react';
 
-export default class SettingsScreen extends React.Component {
+import {
+  Image,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Button,
+  Alert
+} from 'react-native';
+
+export default class SettingScreen extends React.Component {
   static navigationOptions = {
-    title: 'app.json',
+    header: null,
+    title: 'Setting Screen',
   };
 
-  render() {
-    /* Go ahead and delete ExpoConfigView and replace it with your
-     * content, we just wanted to give you a quick view of your config */
-    return <ExpoConfigView />;
+  _goBack = () => {
+    this.props.navigation.goBack()
   }
+
+  render() {
+    return (
+      <View style={styles.container}>
+      <Text>
+        Settings screen 
+      </Text> 
+      <Button onPress={this._goBack} title="Go back"/>
+      </View>
+    );
+  }
+
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+
+  contentContainer: {
+    paddingTop: 150,
+    width: 200,
+  },
+
+  text: {
+    fontSize: 20,
+    textAlign: 'center'
+  }
+});

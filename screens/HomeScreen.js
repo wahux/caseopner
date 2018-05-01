@@ -10,9 +10,7 @@ import {
   View,
   Button,
   Alert,
-  navigationOptions,
 } from 'react-native';
-
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -20,23 +18,19 @@ export default class HomeScreen extends React.Component {
   };
 
   _goToOpen = () => {
-    Alert.alert('Kommer snart')
-    navigate('openScreen', {name: 'open'})    
+    this.props.navigation.navigate('Open')
   }
 
   _goToInventory = () => {
-    Alert.alert('Kommer snart')
+    this.props.navigation.navigate('Inventory')
   }
 
   _goToSettings = () => {
-    Alert.alert('Kommer snart')
+    this.props.navigation.navigate('Settings')
   }
  
   _goToCredit = () => {
-    Alert.alert("Credits:")
-    Alert.alert("Magnus Ley: Programmør og Ideer")
-    Alert.alert("Marcus Berry: Designer og Ideer")
-    
+    this.props.navigation.navigate('Credit')
   }
 
   render() {
