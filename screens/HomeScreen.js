@@ -10,7 +10,7 @@ import {
   TouchableOpacity,
   View,
   Button,
-  Alert
+  Alert,
 } from 'react-native';
 
 export default class HomeScreen extends React.Component {
@@ -18,20 +18,20 @@ export default class HomeScreen extends React.Component {
     header: null,
   };
 
-  _goToKnap1 = () => {
-    Alert.alert('Knap 1')
+  _goToOpen = () => {
+    this.props.navigation.navigate('Open')
   }
 
-  _goToKnap2 = () => {
-    Alert.alert('Knap 2')
+  _goToInventory = () => {
+    this.props.navigation.navigate('Inventory')
   }
 
-  _goToKnap3 = () => {
-    Alert.alert('Knap 3')
+  _goToSettings = () => {
+    this.props.navigation.navigate('Settings')
   }
  
   _goToCredit = () => {
-    Alert.alert("credit to Magnus L and Marcus B")
+    this.props.navigation.navigate('Credit')
   }
 
   render() {
@@ -40,11 +40,11 @@ export default class HomeScreen extends React.Component {
         <View style={styles.contentContainer}>
           <Text style={styles.text}>Case Opener</Text>
           <Button 
-            onPress={this._goToKnap1} 
-            title="Knap 1"/>
-          <Button onPress={this._goToKnap2} title="Knap 2"/>
-          <Button onPress={this._goToKnap3} title="Knap 3"/>
-          <Button onPress={this._goToCredit} title="credit"/>
+            onPress={this._goToOpen} 
+            title="open"/>
+          <Button onPress={this._goToInventory} title="inventory "/>
+          <Button onPress={this._goToSettings} title="Settings"/>
+          <Button onPress={this._goToCredit}  title="credit"/>
         </View>     
       </View>
     );

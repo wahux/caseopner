@@ -12,10 +12,10 @@ import {
   Alert
 } from 'react-native';
 
-export default class SettingScreen extends React.Component {
+export default class OpenScreen extends React.Component {
   static navigationOptions = {
     header: null,
-    title: 'Setting Screen',
+    title: 'Open Screen',
   };
 
   _goBack = () => {
@@ -26,7 +26,7 @@ export default class SettingScreen extends React.Component {
     return (
       <View style={styles.container}>
       <Text>
-        Settings screen 
+        hej med dig 
       </Text> 
       <Button onPress={this._goBack} title="Go back"/>
       </View>
