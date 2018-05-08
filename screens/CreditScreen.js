@@ -30,14 +30,14 @@ export default class CreditScreen extends React.Component {
             Credits
           </Text>
           <Text style={styles.text1}>
-          Magnus Ley:
+          Magnus Ley: Programmer
           </Text>
           <Text style={styles.text1}>
-          Marcus Berry:
+          Marcus Berry: Designer
           </Text>
         </View>
         <View style={styles.knapContainer}> 
-          <Button  onPress={this._goBack} title="Tilbage"/>
+          <Button  onPress={this._goBack} title="Go Back"/>
         </View>
       </View>
     );
