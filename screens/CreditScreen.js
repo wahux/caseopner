@@ -15,7 +15,7 @@ import {
 export default class CreditScreen extends React.Component {
   static navigationOptions = {
     header: null,
-    title: 'Credit',
+    title: 'Credits',
   };
 
   _goBack = () => {
@@ -37,7 +37,7 @@ export default class CreditScreen extends React.Component {
           </Text>
         </View>
         <View style={styles.knapContainer}> 
-          <Button  onPress={this._goBack} title="Go back"/>
+          <Button  onPress={this._goBack} title="Tilbage"/>
         </View>
       </View>
     );
