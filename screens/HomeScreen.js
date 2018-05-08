@@ -68,5 +68,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 50,
     textAlign: 'center',
-     }
+    color: 'orange',   
+  }
 });
