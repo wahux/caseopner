@@ -54,7 +54,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#003cb3',
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -67,6 +67,6 @@ const styles = StyleSheet.create({
 
   text: {
     fontSize: 20,
-    textAlign: 'center'
+    textAlign: 'top'
   }
 });
