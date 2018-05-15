@@ -33,7 +33,7 @@ export default class CreditScreen extends React.Component {
           Magnus Ley: Programmer
           </Text>
           <Text style={styles.text1}>
-          Marcus Berry: Designer
+          Marcus Berry: Designerrrrr
           </Text>
         </View>
         <View style={styles.knapContainer}> 
