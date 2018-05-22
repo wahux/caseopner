@@ -12,7 +12,7 @@ import {
   Alert
 } from 'react-native';
 
-export default class OpenScreen extends React.Component {
+export default class ClutchCaseScreen extends React.Component {
   static navigationOptions = {
     header: null,
     title: 'Inventory',
@@ -26,7 +26,8 @@ export default class OpenScreen extends React.Component {
     return (
       <View style={styles.container}>
       <Text>
-      Inventory
+      Clutch 
+      Case
       </Text> 
       <Button onPress={this._goBack} title="Go back"/>
       </View>

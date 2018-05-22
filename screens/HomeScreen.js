@@ -44,7 +44,7 @@ export default class HomeScreen extends React.Component {
             title="open"/>
           <Button onPress={this._goToInventory} title="inventory "/>
           <Button onPress={this._goToSettings} title="Settings"/>
-          <Button onPress={this._goToCredit}  title="credit"/>
+          <Button onPress={this._goToCredit}  title="Credits"/>
         </View>     
       </View>
     );
@@ -55,7 +55,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#003cb3',
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -67,7 +67,8 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    fontSize: 20,
-    textAlign: 'center'
+    fontSize: 50,
+    textAlign: 'center',
+    color: 'orange',   
   }
 });

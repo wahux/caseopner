@@ -6,10 +6,10 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
   Button,
-  Alert
+  Alert,
+  TouchableOpacity
 } from 'react-native';
 
 export default class OpenScreen extends React.Component {
@@ -22,26 +22,36 @@ export default class OpenScreen extends React.Component {
     this.props.navigation.goBack()
   }
 
+  _openCase = () => {
+    this.props.navigation.navigate('Clutch')
+  }
+
   render() {
     return (
       <View style={styles.container}>
-      <Text>
-        hej med dig 
-      </Text> 
-      <Button onPress={this._goBack} title="Go back"/>
+        <View style={styles.imageView}>
+        <TouchableOpacity
+          onPress={this._openCase}>
+            <Image
+              style={styles.image}
+              source={require('../assets/images/c238.png')}
+            />
+        </TouchableOpacity>
+
+        </View>
+        <View style={styles.buttonView}>
+          <Button onPress={this._goBack} title="Go back"/>
+        </View>
       </View>
     );
   }
-
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'space-between'
   },
 
   contentContainer: {
@@ -52,5 +62,17 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     textAlign: 'center'
+  },
+
+  imageView: {
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+  },
+
+  image: {
+  },
+
+  buttonView: {
+    justifyContent: 'flex-end'
   }
 });
