@@ -9,6 +9,7 @@ import OpenScreen from '../screens/OpenScreen'
 import SettingsScreen from '../screens/SettingsScreen';
 import InventoryScreen from '../screens/InventoryScreen'
 import CreditScreen from '../screens/CreditScreen'
+import  ClutchCaseScreen from '../screens/ClutchCaseScreen'
 
 const RootStackNavigator = StackNavigator(
   {
@@ -25,7 +26,10 @@ const RootStackNavigator = StackNavigator(
       screen: InventoryScreen
     },
     Credit: {
-    screen: CreditScreen
+      screen: CreditScreen
+    },
+    Clutch: {
+      screen: ClutchCaseScreen 
     }
   },
   {
